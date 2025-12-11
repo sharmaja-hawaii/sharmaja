@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_image_coordinates import streamlit_image_coordinates as stic
 
 st.set_page_config(layout="wide")
 
@@ -70,4 +69,5 @@ with col2:
     area = st.empty()
     map = area.image(mapimage, width = 800, caption= "Image and data courtesy of Google Project Sunroof")
     st.image(legend, width=400)
+
     
