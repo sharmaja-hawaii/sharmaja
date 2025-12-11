@@ -1,5 +1,44 @@
 import streamlit as st
 
+st.markdown("""
+<!-- Load Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=DM+Serif+Text:ital@0;1&family=Delius&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+
+<style>
+/* H1 — Streamlit title() and markdown # */
+h1 {
+    font-family: "Sansation", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+    text-align: center !important;
+}
+
+/* H2 — Streamlit header() and markdown ## */
+h2 {
+    font-family: "Delius", cursive !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    font-size:1.5rem !important;
+}
+
+/* H3 — Streamlit subheader() and markdown ### */
+h3 {
+    font-family: "DM Serif Text", serif !important;
+    font-weight: 700 !important;
+    text-align: center !important
+}
+
+/* Body text font */
+html, body, p, [class*="css"] {
+    font-family: "Cactus Classical Serif", serif !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 st.set_page_config(layout="wide")
 
 col1, col2, = st.columns([1, 3])
@@ -69,5 +108,4 @@ with col2:
     area = st.empty()
     map = area.image(mapimage, width = 800, caption= "Image and data courtesy of Google Project Sunroof")
     st.image(legend, width=400)
-
     
