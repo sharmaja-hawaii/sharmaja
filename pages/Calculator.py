@@ -139,6 +139,6 @@ elif solartype == "Water Heating Solar Power":
 else:
     avgsave = 3000
 
-cost/avgsave == yrpayoff
+yrpayoff = (cost/avgsave)
 
-streamlit.write(f"This system will pay off it's own cost in ({yrpayoff}) years)" 
+streamlit.write(f"This system will pay off it's own cost in {yrpayoff} years)" 
