@@ -141,4 +141,4 @@ else:
 
 yrpayoff = (cost/avgsave)
 
-streamlit.write(f"This system will pay off it's own cost in {yrpayoff} years)" 
+streamlit.write(f"This system will pay off it's own cost in {yrpayoff} years") 
