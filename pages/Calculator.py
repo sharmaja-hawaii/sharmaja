@@ -41,7 +41,7 @@ html, body, p, [class*="css"] {
 
 streamlit.title("RETC Savings Calculator")
 streamlit.write("Let's calculate your RETC savings!")
-streamlit.write("This calculator is accurate as of 12/10/2025")
+streamlit.write("This calculator is accurate as of 12/22/2025")
 
 #default placeholder rate
 #rate = streamlit.number_input("Placeholder rate", min_value=0.0, max_value=1.0, value=0.35)
@@ -130,3 +130,15 @@ if optimized == True:
 else:
    streamlit.write(f"Suggestion: You can save ${save} by switching your renewable energy system to {bettersys}")
 
+
+
+if solartype == "None":
+    avgsave = 600
+elif solartype == "Water Heating Solar Power":
+    avgsave = 1000
+else:
+    avgsave = 3000
+
+cost/avgsave = yrpayoff
+
+streamlit.write(f"This system will pay off it's own cost in ({yrpayoff}) years" 
